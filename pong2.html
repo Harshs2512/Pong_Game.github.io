@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="pong2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- <div class="w-full bg-gray-900 text-white flex">
+        <span class="text-2xl font-bold ml-3">Harsh : </span>
+        <span class="text-2xl font-bold mr-24" id="userScore"></span>
+        <span class="text-4xl font-bold mx-96">Time</span>
+        <span class="text-2xl font-bold ml-5">Computer : </span>
+        <span class="text-2xl font-bold" id="compScore"></span>
+    </div> -->
+    <div id="game-container">
+        <div id="userScore">0</div>
+        <div id="compScore">0</div>
+        <div id="user-paddle"></div>
+        <div id="comp-paddle"></div>
+        <div id="ball"></div>
+    </div>
+    <div id="userWin" style="display: none;">First player is Win</div>
+    <button onclick="restartgame()" id="restartbtn" style="display: none;"
+        class="items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+        <span
+            class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Restart Game
+        </span>
+    </button>
+    <div onclick="restartgame()" id="compWin" style="display: none;">Second player is Win</div>
+    <button id="restartbtn" style="display: none;"
+        class="items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+        <span
+            class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Restart Game
+        </span>
+    </button>
+    <script src="pong2.js"></script>
+</body>
+
+</html>
